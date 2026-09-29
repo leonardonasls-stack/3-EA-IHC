@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@config "../../../tailwind.config.js";
+
+@layer base {
+  body {
+    background-color: #f1f5f9; /* bg-slate-100 */
+    color: #1e293b; /* text-slate-800 */
+    font-family: 'Inter', sans-serif; /* font-sans */
+  }
+}
+
+@layer utilities {
+  /* Garantindo área de toque mínima (WCAG 2.5.5 Target Size) */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
